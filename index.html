@@ -19,12 +19,12 @@
   <body class="min-h-svh bg-cream-100 font-sans text-ink antialiased">
     <div class="mx-auto flex min-h-svh max-w-3xl flex-col px-4 py-6 sm:py-12">
       <main
-        class="relative flex-1 overflow-hidden rounded-3xl border-4 border-cream-200 bg-gradient-to-b from-cream-50 via-cream-50 to-cream-100 shadow-xl shadow-gold-700/10"
+        class="relative flex flex-1 flex-col overflow-hidden rounded-3xl border-4 border-cream-200 bg-gradient-to-b from-cream-50 via-cream-50 to-cream-100 shadow-xl shadow-gold-700/10"
       >
         <!-- Innenrahmen wie auf dem Flyer -->
-        <div class="pointer-events-none absolute inset-3 rounded-2xl border border-gold-400/50"></div>
+        <div class="pointer-events-none absolute inset-3 z-10 rounded-2xl border border-gold-400/50"></div>
 
-        <div class="relative px-6 py-12 text-center sm:px-14 sm:py-16">
+        <div class="relative px-6 pt-12 pb-10 text-center sm:px-14 sm:pt-16 sm:pb-12">
           <p class="text-sm font-semibold tracking-[0.25em] text-gold-600 uppercase">
             Sonni Gustaw · Essen
           </p>
@@ -80,6 +80,110 @@
             Fischerstr. 8<br />
             45128 Essen
           </address>
+        </div>
+
+        <!-- Silhouetten: Teekanne, Tasse, Zierteller mit Tellerstapel, Vase, Kristallglas, Ring -->
+        <div class="mt-auto px-6 pb-8 sm:px-12 sm:pb-12" aria-hidden="true">
+          <svg viewBox="0 0 640 166" class="h-auto w-full text-gold-500" fill="currentColor">
+            <!-- Teekanne -->
+            <g>
+              <path d="M58 126C42 123 35 112 31 100C28 91 23 85 14 81L16 76C27 78 36 85 40 95C44 105 50 110 60 112Z" />
+              <path fill-rule="evenodd" d="M150 104C176 94 188 112 182 129C177 142 164 148 152 148L152 141C163 139 171 133 174 124C178 112 170 106 156 113Z" />
+              <path d="M62 156C49 150 45 132 51 116C57 100 78 88 105 88C132 88 153 100 159 116C165 132 161 150 148 156Z" />
+              <path d="M76 160H134L131 154H79Z" />
+              <path d="M83 91C85 80 125 80 127 91Z" />
+              <path d="M93 83C95 74 115 74 117 83Z" />
+              <path d="M105 60C99 65 99 72 105 77C111 72 111 65 105 60Z" />
+              <g fill="none" stroke="var(--color-cream-50)" stroke-linecap="round">
+                <path d="M58 107C80 99 130 99 152 107" stroke-width="1.6" />
+                <path d="M54 146C80 152 130 152 156 146" stroke-width="1.2" />
+                <circle cx="105" cy="127" r="5.5" stroke-width="1.5" />
+                <circle cx="105" cy="127" r="1.6" fill="var(--color-cream-50)" stroke="none" />
+                <path d="M99 131C92 134 86 132 83 127C89 125 95 126 99 131Z" stroke-width="1.2" />
+                <path d="M111 131C118 134 124 132 127 127C121 125 115 126 111 131Z" stroke-width="1.2" />
+              </g>
+            </g>
+
+            <!-- Tasse mit Untertasse -->
+            <g>
+              <path d="M195 156C205 150 285 150 295 156C285 162 205 162 195 156Z" />
+              <path fill-rule="evenodd" d="M272 120C292 112 299 134 281 141L267 144L269 137L278 135C288 131 286 121 274 127Z" />
+              <path d="M214 112H276C276 134 264 147 245 147C226 147 214 134 214 112Z" />
+              <path d="M234 147H256L254 153H236Z" />
+              <g fill="none" stroke="var(--color-cream-50)" stroke-linecap="round">
+                <path d="M216 118H274" stroke-width="1.5" />
+                <path d="M224 156C235 158 255 158 266 156" stroke-width="1.2" />
+                <circle cx="245" cy="131" r="4.5" stroke-width="1.4" />
+                <path d="M240 134C234 137 229 135 227 131C232 129 237 130 240 134Z" stroke-width="1.1" />
+                <path d="M250 134C256 137 261 135 263 131C258 129 253 130 250 134Z" stroke-width="1.1" />
+              </g>
+            </g>
+
+            <!-- Zierteller (stehend) mit Tellerstapel -->
+            <g>
+              <circle cx="360" cy="112" r="38" />
+              <g fill="none" stroke="var(--color-cream-50)">
+                <circle cx="360" cy="112" r="31" stroke-width="1.5" />
+                <circle cx="360" cy="112" r="27" stroke-width="2" stroke-dasharray="1.5 3.5" />
+                <circle cx="360" cy="112" r="19" stroke-width="1" />
+                <circle cx="360" cy="112" r="6" stroke-width="1.5" />
+                <path d="M360 106C356 98 358 92 360 90C362 92 364 98 360 106Z M366 112C374 108 380 110 382 112C380 114 374 116 366 112Z M360 118C364 126 362 132 360 134C358 132 356 126 360 118Z M354 112C346 116 340 114 338 112C340 110 346 108 354 112Z" stroke-width="1.2" />
+              </g>
+              <g stroke="var(--color-cream-50)" stroke-width="2.5">
+                <ellipse cx="360" cy="155" rx="46" ry="5.5" />
+                <ellipse cx="360" cy="148" rx="46" ry="5.5" />
+                <ellipse cx="360" cy="141" rx="46" ry="5.5" />
+              </g>
+            </g>
+
+            <!-- Vase -->
+            <g>
+              <path d="M436 156C424 140 422 118 432 102C440 90 442 80 436 70C434 66 436 62 442 62H458C464 62 466 66 464 70C458 80 460 90 468 102C478 118 476 140 464 156Z" />
+              <path d="M431 63C435 56 465 56 469 63Z" />
+              <path d="M437 160H463L461 154H439Z" />
+              <g fill="none" stroke="var(--color-cream-50)" stroke-linecap="round">
+                <path d="M427 116C440 121 460 121 473 116" stroke-width="1.4" />
+                <path d="M426 134C440 139 460 139 474 134" stroke-width="1.4" />
+                <path d="M439 76H461" stroke-width="1.2" />
+              </g>
+              <g fill="var(--color-cream-50)">
+                <circle cx="438" cy="125" r="1.8" />
+                <circle cx="450" cy="127" r="2.4" />
+                <circle cx="462" cy="125" r="1.8" />
+              </g>
+            </g>
+
+            <!-- Kristallglas -->
+            <g>
+              <path d="M510 66H550C551 92 543 108 530 110C517 108 509 92 510 66Z" />
+              <path d="M528 109H532V150H528Z" />
+              <ellipse cx="530" cy="126" rx="4.5" ry="3" />
+              <path d="M513 160C515 153 545 153 547 160Z" />
+              <g fill="none" stroke="var(--color-cream-50)" stroke-width="1" stroke-linecap="round">
+                <path d="M512 72H548" stroke-width="1.4" />
+                <path d="M516 78L530 100L544 78" />
+                <path d="M523 78L530 89L537 78" />
+                <path d="M514 88L522 100" />
+                <path d="M546 88L538 100" />
+              </g>
+            </g>
+
+            <!-- Ring mit Stein -->
+            <g>
+              <circle cx="600" cy="142" r="13" fill="none" stroke="currentColor" stroke-width="4" />
+              <path d="M594 129H606L604 124H596Z" />
+              <path d="M590 111H610L615 117L600 128L585 117Z" />
+              <g fill="none" stroke="var(--color-cream-50)" stroke-width="0.9">
+                <path d="M585 117H615" />
+                <path d="M595 111L593 117L600 128L607 117L605 111" />
+              </g>
+              <path d="M622 94L623.5 99L628 100.5L623.5 102L622 107L620.5 102L616 100.5L620.5 99Z" />
+              <path d="M580 98L581 101L584 102L581 103L580 106L579 103L576 102L579 101Z" />
+            </g>
+
+            <!-- Standlinie -->
+            <rect x="0" y="160" width="640" height="1.5" opacity="0.5" />
+          </svg>
         </div>
       </main>
 
