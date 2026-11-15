@@ -15,6 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- Direkt im head eingebunden, damit die Seite nie ungestylt aufblitzt -->
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body class="min-h-svh bg-cream-100 font-sans text-ink antialiased">
     <div class="mx-auto flex min-h-svh max-w-3xl flex-col px-4 py-6 sm:py-12">
@@ -54,7 +56,7 @@
             style="--verzoegerung: 720ms"
             class="einblenden mx-auto mt-10 inline-flex max-w-full items-center gap-3 rounded-full bg-gold-500 px-5 py-4 sm:gap-4 text-white shadow-lg shadow-gold-700/25 transition hover:bg-gold-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-600 sm:px-10"
           >
-            <svg class="size-6 shrink-0 sm:size-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <svg class="size-6 shrink-0 sm:size-8" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path
                 d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"
               />
@@ -71,7 +73,7 @@
 
           <div style="--verzoegerung: 920ms" class="einblenden mx-auto mt-12 flex max-w-sm items-center gap-4 text-gold-400" aria-hidden="true">
             <span style="--verzoegerung: 1000ms" class="linie-wachsen h-px flex-1 origin-right bg-gold-400/60"></span>
-            <svg class="size-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.6H22l-6.2 4.6 2.4 7.6L12 17.2l-6.2 4.6 2.4-7.6L2 9.6h7.6z" /></svg>
+            <svg class="size-5" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.6H22l-6.2 4.6 2.4 7.6L12 17.2l-6.2 4.6 2.4-7.6L2 9.6h7.6z" /></svg>
             <span style="--verzoegerung: 1000ms" class="linie-wachsen h-px flex-1 origin-left bg-gold-400/60"></span>
           </div>
 
