@@ -19,39 +19,40 @@
   <body class="min-h-svh bg-cream-100 font-sans text-ink antialiased">
     <div class="mx-auto flex min-h-svh max-w-3xl flex-col px-4 py-6 sm:py-12">
       <main
-        class="relative flex flex-1 flex-col overflow-hidden rounded-3xl border-4 border-cream-200 bg-gradient-to-b from-cream-50 via-cream-50 to-cream-100 shadow-xl shadow-gold-700/10"
+        class="karte-einblenden relative flex flex-1 flex-col overflow-hidden rounded-3xl border-4 border-cream-200 bg-gradient-to-b from-cream-50 via-cream-50 to-cream-100 shadow-xl shadow-gold-700/10"
       >
         <!-- Innenrahmen wie auf dem Flyer -->
         <div class="pointer-events-none absolute inset-3 z-10 rounded-2xl border border-gold-400/50"></div>
 
         <div class="relative px-6 pt-12 pb-10 text-center sm:px-14 sm:pt-16 sm:pb-12">
-          <p class="text-sm font-semibold tracking-[0.25em] text-gold-600 uppercase">
+          <p style="--verzoegerung: 150ms" class="einblenden text-sm font-semibold tracking-[0.25em] text-gold-600 uppercase">
             Sonni Gustaw · Essen
           </p>
 
-          <h1 class="mt-4 font-display text-4xl leading-tight font-extrabold tracking-tight sm:text-6xl">
+          <h1 style="--verzoegerung: 250ms" class="einblenden mt-4 font-display text-4xl leading-tight font-extrabold tracking-tight sm:text-6xl">
             Schmuck- &amp; Porzellanankauf
           </h1>
 
-          <div class="mt-3 flex items-center justify-center gap-4">
-            <span class="h-0.5 w-10 bg-gold-500 sm:w-20"></span>
+          <div style="--verzoegerung: 380ms" class="einblenden mt-3 flex items-center justify-center gap-4">
+            <span style="--verzoegerung: 550ms" class="linie-wachsen h-0.5 w-10 origin-right bg-gold-500 sm:w-20"></span>
             <span class="text-3xl font-extrabold text-gold-500 sm:text-5xl">aller Art</span>
-            <span class="h-0.5 w-10 bg-gold-500 sm:w-20"></span>
+            <span style="--verzoegerung: 550ms" class="linie-wachsen h-0.5 w-10 origin-left bg-gold-500 sm:w-20"></span>
           </div>
 
-          <p class="mx-auto mt-8 max-w-xl text-lg leading-relaxed sm:text-xl">
+          <p style="--verzoegerung: 500ms" class="einblenden mx-auto mt-8 max-w-xl text-lg leading-relaxed sm:text-xl">
             Schmuck, Geschirr, Sammeltassen, Teller, Vasen, Besteck, Bleikristall aller Art,
             Gläser, Zinn-, Messing- &amp; Kupfer-Teile
           </p>
 
-          <p class="mx-auto mt-4 max-w-xl text-lg leading-relaxed font-semibold text-gold-600 sm:text-xl">
+          <p style="--verzoegerung: 600ms" class="einblenden mx-auto mt-4 max-w-xl text-lg leading-relaxed font-semibold text-gold-600 sm:text-xl">
             (<span class="font-bold">Aktion:</span> wir kaufen jetzt auch Lederwaren, Jacken,
             Westen, Mäntel, Taschen etc.)
           </p>
 
           <a
             href="tel:+4915755391600"
-            class="mx-auto mt-10 inline-flex max-w-full items-center gap-3 rounded-full bg-gold-500 px-5 py-4 sm:gap-4 text-white shadow-lg shadow-gold-700/25 transition hover:bg-gold-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-600 sm:px-10"
+            style="--verzoegerung: 720ms"
+            class="einblenden mx-auto mt-10 inline-flex max-w-full items-center gap-3 rounded-full bg-gold-500 px-5 py-4 sm:gap-4 text-white shadow-lg shadow-gold-700/25 transition hover:bg-gold-600 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold-600 sm:px-10"
           >
             <svg class="size-6 shrink-0 sm:size-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path
@@ -62,19 +63,19 @@
             <span class="text-xl font-bold whitespace-nowrap min-[400px]:text-2xl sm:text-3xl">Tel. 0157 55391600</span>
           </a>
 
-          <p class="mt-8 text-lg leading-relaxed sm:text-xl">
+          <p style="--verzoegerung: 840ms" class="einblenden mt-8 text-lg leading-relaxed sm:text-xl">
             (Herr Gustaw)<br />
             <span class="font-semibold">kostenloser Hausbesuch</span><br />
             (auch sonntags)
           </p>
 
-          <div class="mx-auto mt-12 flex max-w-sm items-center gap-4 text-gold-400" aria-hidden="true">
-            <span class="h-px flex-1 bg-gold-400/60"></span>
+          <div style="--verzoegerung: 920ms" class="einblenden mx-auto mt-12 flex max-w-sm items-center gap-4 text-gold-400" aria-hidden="true">
+            <span style="--verzoegerung: 1000ms" class="linie-wachsen h-px flex-1 origin-right bg-gold-400/60"></span>
             <svg class="size-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.6H22l-6.2 4.6 2.4 7.6L12 17.2l-6.2 4.6 2.4-7.6L2 9.6h7.6z" /></svg>
-            <span class="h-px flex-1 bg-gold-400/60"></span>
+            <span style="--verzoegerung: 1000ms" class="linie-wachsen h-px flex-1 origin-left bg-gold-400/60"></span>
           </div>
 
-          <address class="mt-8 text-lg leading-relaxed not-italic">
+          <address style="--verzoegerung: 1000ms" class="einblenden mt-8 text-lg leading-relaxed not-italic">
             <span class="block font-bold">Schmuck und Porzellan Ankauf</span>
             Sonni Gustaw<br />
             Fischerstr. 8<br />
@@ -99,7 +100,7 @@
 
             <g id="sil-formen">
             <!-- Teekanne -->
-            <g>
+            <g class="einblenden" style="--verzoegerung: 1150ms">
               <path d="M58 126C42 123 35 112 31 100C28 91 23 85 14 81L16 76C27 78 36 85 40 95C44 105 50 110 60 112Z" />
               <path fill-rule="evenodd" d="M150 104C176 94 188 112 182 129C177 142 164 148 152 148L152 141C163 139 171 133 174 124C178 112 170 106 156 113Z" />
               <path d="M62 156C49 150 45 132 51 116C57 100 78 88 105 88C132 88 153 100 159 116C165 132 161 150 148 156Z" />
@@ -118,7 +119,7 @@
             </g>
 
             <!-- Tasse mit Untertasse -->
-            <g>
+            <g class="einblenden" style="--verzoegerung: 1260ms">
               <path d="M195 156C205 150 285 150 295 156C285 162 205 162 195 156Z" />
               <path fill-rule="evenodd" d="M272 120C292 112 299 134 281 141L267 144L269 137L278 135C288 131 286 121 274 127Z" />
               <path d="M214 112H276C276 134 264 147 245 147C226 147 214 134 214 112Z" />
@@ -133,7 +134,7 @@
             </g>
 
             <!-- Zierteller (stehend) mit Tellerstapel -->
-            <g>
+            <g class="einblenden" style="--verzoegerung: 1370ms">
               <circle cx="360" cy="112" r="38" />
               <g fill="none" stroke="var(--color-cream-50)">
                 <circle cx="360" cy="112" r="31" stroke-width="1.5" />
@@ -150,7 +151,7 @@
             </g>
 
             <!-- Vase -->
-            <g>
+            <g class="einblenden" style="--verzoegerung: 1480ms">
               <path d="M436 156C424 140 422 118 432 102C440 90 442 80 436 70C434 66 436 62 442 62H458C464 62 466 66 464 70C458 80 460 90 468 102C478 118 476 140 464 156Z" />
               <path d="M431 63C435 56 465 56 469 63Z" />
               <path d="M437 160H463L461 154H439Z" />
@@ -167,7 +168,7 @@
             </g>
 
             <!-- Kristallglas -->
-            <g>
+            <g class="einblenden" style="--verzoegerung: 1590ms">
               <path d="M510 66H550C551 92 543 108 530 110C517 108 509 92 510 66Z" />
               <path d="M528 109H532V150H528Z" />
               <ellipse cx="530" cy="126" rx="4.5" ry="3" />
@@ -182,7 +183,7 @@
             </g>
 
             <!-- Ring mit Stein -->
-            <g>
+            <g class="einblenden" style="--verzoegerung: 1700ms">
               <circle cx="600" cy="142" r="13" fill="none" stroke="currentColor" stroke-width="4" />
               <path d="M594 129H606L604 124H596Z" />
               <path d="M590 111H610L615 117L600 128L585 117Z" />

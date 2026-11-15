@@ -33,3 +33,57 @@
     animation: none;
   }
 }
+
+/* Dezente Animationen beim Seitenstart, gestaffelt über --verzoegerung */
+@keyframes einblenden {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes linie-wachsen {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes karte-einblenden {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.einblenden {
+  animation: einblenden 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: var(--verzoegerung, 0ms);
+}
+
+.linie-wachsen {
+  animation: linie-wachsen 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: var(--verzoegerung, 0ms);
+}
+
+.karte-einblenden {
+  animation: karte-einblenden 0.7s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .einblenden,
+  .linie-wachsen,
+  .karte-einblenden {
+    animation: none;
+  }
+}
