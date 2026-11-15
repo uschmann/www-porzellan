@@ -13,3 +13,23 @@
   --color-gold-700: #8a5f28;
   --color-ink: #2b2b2b;
 }
+
+/* Glanz über die Silhouetten im Fußbereich */
+@keyframes sil-glanz {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(860px);
+  }
+}
+
+.is-glaenzend .sil-glanz {
+  animation: sil-glanz 1.2s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .is-glaenzend .sil-glanz {
+    animation: none;
+  }
+}
